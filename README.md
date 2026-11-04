@@ -2,140 +2,140 @@
 
 **Image Viewer & File Sorter for Windows**
 
-[English README](README.en.md)
+[日本語版 README](README_JA.md)
 
-Lectapは、画像やアーカイブの閲覧と、指定したフォルダへのファイルの素早い振り分けをひとつでこなせるWindows向けデスクトップアプリです。
+Lectap is a Windows desktop app for viewing images and archive contents while quickly sorting files into preset folders.
 
-キーボードショートカットやマウス操作を使い、閲覧から整理までを一つの画面で行えます。
+Keyboard shortcuts and mouse operations let you move from viewing to organizing in a single screen.
 
-## スクリーンショットと操作例
+## Screenshots and Demo
 
-![Lectapの画像一覧、中央プレビュー、移動先フォルダ](assets/screenshots/overview.png)
+![Lectap image list, central preview, and destination folders](assets/screenshots/overview.png)
 
-画像一覧、中央プレビュー、移動先フォルダを一画面で確認できます。
+View the image list, central preview, and destination folders in one screen.
 
-![Lectapの見開き表示](assets/screenshots/two-page-view.png)
+![Lectap two-page view](assets/screenshots/two-page-view.png)
 
-見開き表示では、左右のページを並べて確認できます。
+View left and right pages side by side in two-page mode.
 
-![Lectapの設定画面](assets/screenshots/settings-cache.png)
+![Lectap Settings window](assets/screenshots/settings-cache.png)
 
-表示設定では、サムネイルキャッシュやアーカイブの先読みを管理できます。
+Manage thumbnail cache and archive preloading in Display settings.
 
-![Lectapで画像を移動先フォルダへ振り分ける操作例](assets/demo/file-sorting-demo.gif)
+![Sorting images into destination folders with Lectap](assets/demo/file-sorting-demo.gif)
 
-登録した移動先フォルダを選ぶと、表示中の画像を振り分け、次の画像を続けて確認できます。
+Choose a registered destination folder to move the current image and continue with the next one.
 
-## 主な機能
+## Main Features
 
-- 画像フォルダとアーカイブ内の画像を閲覧
-- 画像が直接入っていないフォルダで、各アーカイブの先頭画像を順に閲覧
-- 登録した移動先フォルダへのファイル移動
-- フォルダごとのショートカットキー設定
-- プロファイル表示とフォルダツリー表示を切り替えられる右カラム
-- ZIP、EPUB、RARを手動で展開せずに閲覧
-- 単ページ表示と見開き表示
-- キーボード、ホイール、中央ボタン、マウスジェスチャーのカスタマイズ
-- 前回の閲覧位置からの再開
-- 移動・削除・名前変更の取り消し
-- 設定のエクスポートとインポート
+- Browse images in folders and archives
+- Preview the first page of each archive in folders without loose images
+- Move files to registered destination folders
+- Assign keyboard shortcuts to individual folders
+- Switch the right column between profile and folder-tree views
+- Browse ZIP, EPUB, and RAR archives without manually extracting them first
+- Single-page and two-page viewing
+- Customize keyboard, wheel, middle-button, and mouse-gesture actions
+- Resume from the previous viewing position
+- Undo file moves, deletions, and renames
+- Export and import settings
 
-## 対応形式
+## Supported Formats
 
-### 画像
+### Images
 
 `JPG` / `JPEG` / `PNG` / `BMP` / `WebP` / `GIF`
 
-GIFは先頭フレームのみを表示します。アニメーション再生は、将来の動画再生機能とあわせて対応を検討します。
+GIF files are displayed as their first frame only. Animation playback may be considered alongside a future video-playback feature.
 
-### アーカイブ
+### Archives
 
 `ZIP` / `EPUB` / `RAR`
 
-RARの閲覧には、別途 [7-Zip](https://www.7-zip.org/) のインストールが必要です。7-ZipはLectapに同梱されません。
+RAR browsing requires a separate installation of [7-Zip](https://www.7-zip.org/). 7-Zip is not bundled with Lectap.
 
-Lectapは現在、64bit版7-Zipの既定のインストール先である `C:\Program Files\7-Zip\7z.exe` を検出します。別の場所へインストールした7-Zip、32bit版、またはPATH上の `7z.exe` は検出対象になりません。
+Lectap currently detects the 64-bit 7-Zip executable at its default installation path: `C:\Program Files\7-Zip\7z.exe`. It does not detect 7-Zip installed elsewhere, 32-bit 7-Zip, or `7z.exe` available only through `PATH`.
 
-## ダウンロードと起動
+## Download and Run
 
-公式配布はGitHub Releasesのみです。
+Official distribution is available only through GitHub Releases.
 
-1. [GitHub Releases](https://github.com/chihaya-dev/Lectap/releases) から最新の `Lectap-1.0.0-win-x64.zip` をダウンロードします。
-2. ZIPファイルを任意の場所へ展開します。
-3. 展開したフォルダ内の `Lectap.exe` を実行します。
+1. Download the latest `Lectap-1.0.0-win-x64.zip` from [GitHub Releases](https://github.com/chihaya-dev/Lectap/releases).
+2. Extract the ZIP file to a folder of your choice.
+3. Run `Lectap.exe` in the extracted folder.
 
-インストーラーは使用しません。Lectapを削除する場合は、展開したフォルダを削除してください。設定やキャッシュなどの保存データは別途残るため、不要であれば「保存データとプライバシー」に記載したフォルダも削除してください。
+Lectap does not use an installer. To remove the app, delete the extracted folder. Settings and cache data are stored separately; remove the folder described in “Stored Data and Privacy” as well when no longer needed.
 
-## 初回起動時の警告とダウンロードの確認
+## First-Run Warnings and Download Verification
 
-初回公開版はコード署名を行っていないため、Microsoft Defender SmartScreenや一部のセキュリティソフトが、ダウンロード時、起動時、またはファイル操作時に警告や確認を表示する場合があります。
+The first public release is not code-signed, so Microsoft Defender SmartScreen or other security software may display a warning or confirmation when downloading, starting, or performing file operations.
 
-Lectapは、利用者の画像、設定、閲覧履歴を自動的に外部へ送信しません。
+Lectap does not automatically send your images, settings, or browsing history outside your computer.
 
-実行する前に、公式GitHub Releasesから取得したファイルであることと、同じリリースに添付する `SHA256SUMS.txt` の値が一致することを確認してください。組織のセキュリティポリシーやWindowsのSmart App Controlにより、実行が許可されない場合があります。
+Before running the app, verify that the ZIP file came from the official GitHub Releases page and that its SHA-256 value matches the corresponding entry in the `SHA256SUMS.txt` file attached to the same release. Your organization's security policy or Windows Smart App Control may still prevent execution.
 
-PowerShellでは、次のコマンドでZIPファイルのSHA-256を確認できます。
+Use the following PowerShell command to verify the ZIP file’s SHA-256 value.
 
 ```powershell
 Get-FileHash -LiteralPath .\Lectap-1.0.0-win-x64.zip -Algorithm SHA256
 ```
 
-## 動作環境
+## System Requirements
 
-- Windows 11 x64で動作確認済み
-- RARを閲覧する場合は7-Zipが必要
+- Tested on Windows 11 x64
+- 7-Zip is required for RAR browsing
 
-ほかのWindows環境での動作は保証していません。
+Operation on other Windows environments is not guaranteed.
 
-## 基本的な使い方
+## Basic Usage
 
-1. 右カラムに移動先フォルダを登録します。フォルダを右カラムへドロップして追加することもできます。
-2. 必要に応じて、登録したフォルダへショートカットキーを設定します。
-3. 左カラムから画像またはアーカイブを選択します。
-4. 内容を確認し、キー操作またはマウス操作で移動先を選びます。
-5. 移動・削除・名前変更は、取り消し操作で元に戻せます。
+1. Register destination folders in the right column. You can also add a folder by dropping it into the right column.
+2. Assign keyboard shortcuts to registered folders as needed.
+3. Select an image or archive from the left column.
+4. Review its contents, then choose a destination with a keyboard or mouse action.
+5. Use Undo to reverse a file move, deletion, or rename.
 
-## 設定のバックアップ
+## Settings Backup
 
-設定画面から、Lectapの設定をJSONファイルとしてエクスポートできます。
+From the Settings window, you can export Lectap settings as a JSON file.
 
-エクスポートした設定ファイルをインポートすると、プロファイル、移動先フォルダ、クイックアクセス、ショートカットキー、マウス操作などを復元できます。
+Importing an exported file restores profiles, destination folders, Quick Access entries, keyboard shortcuts, mouse actions, and related settings.
 
-画面位置、ウィンドウサイズ、閲覧履歴、サムネイルキャッシュなどの端末固有データは、設定ファイルのエクスポート対象に含まれません。
+Device-specific data such as window position, window size, browsing history, and thumbnail cache is not included in exported settings.
 
-## 保存データとプライバシー
+## Stored Data and Privacy
 
-Lectapは、設定、ログ、サムネイルキャッシュ、取り消し用データなどを次の場所へ保存します。
+Lectap stores settings, logs, thumbnail cache, and undo data in the following location.
 
 ```text
 %LOCALAPPDATA%\Lectap
 ```
 
-Lectapは、利用者の画像、設定、閲覧履歴などを自動的に外部へ送信しません。
+Lectap does not automatically send your images, settings, or browsing history outside your computer.
 
-アプリを削除した後も保存データが残る場合があります。不要になった設定やキャッシュは、必要に応じて上記フォルダを手動で削除してください。
+Stored data can remain after the app is removed. Delete the folder above manually when you no longer need its settings or cache.
 
-## 注意事項と制限
+## Notes and Limitations
 
-- 重要なファイルを扱う前に、必ずバックアップを作成してください。
-- パスワードで保護されたアーカイブには対応していません。
-- 破損したアーカイブや未対応の圧縮方式は開けない場合があります。
-- ネットワークドライブ、USBストレージ、休止状態のHDDなどでは、最初のアクセスに時間がかかる場合があります。
-- 設定を別のPCへ移行した場合、登録先フォルダやクイックアクセスのパスが存在しなくても設定自体は保持されます。
+- Back up important files before working with them in Lectap.
+- Password-protected archives are not supported.
+- Corrupted archives or unsupported compression methods may not open.
+- The first access to network drives, USB storage, or sleeping HDDs can take time.
+- When you transfer settings to another PC, destination-folder and Quick Access paths remain in the settings even if the corresponding folders do not exist on that PC.
 
-## 更新
+## Updates
 
-自動更新機能はありません。最新版は [GitHub Releases](https://github.com/chihaya-dev/Lectap/releases) から確認してください。各バージョンの変更内容は、GitHub Releasesのリリースノートを参照してください。
+Lectap has no automatic update feature. Check [GitHub Releases](https://github.com/chihaya-dev/Lectap/releases) for the latest version and read each release note for changes.
 
-## 問い合わせ
+## Contact
 
-不具合報告や機能に関する提案は、[GitHub Issues](https://github.com/chihaya-dev/Lectap/issues) へお願いします。
+Report bugs or suggest features through [GitHub Issues](https://github.com/chihaya-dev/Lectap/issues).
 
-報告時には、可能な範囲でLectapのバージョン、Windowsのバージョン、再現手順、表示されたメッセージ、対象ファイルの形式を添えてください。ローカルパス、Windowsユーザー名、個人情報を含む内容は投稿しないでください。
+When reporting an issue, include the Lectap version, Windows version, reproduction steps, displayed message, and affected file format where possible. Do not post local paths, Windows user names, or other personal information.
 
-セキュリティ上の問題や脆弱性の可能性がある内容は公開Issueに投稿せず、[非公開の報告方法](SECURITY.md)をご確認ください。
+For security concerns or suspected vulnerabilities, do not open a public issue. See [Security reporting](SECURITY.md).
 
-## 作者
+## Author
 
 Chihaya Abutsuka
 
@@ -143,20 +143,18 @@ Chihaya Abutsuka
 
 Copyright © 2026 Chihaya Abutsuka
 
-## 利用条件
+## Terms of Use
 
-Lectapの利用条件は [TERMS_OF_USE.md](TERMS_OF_USE.md) を参照してください。
+Lectap’s Terms of Use are available in Japanese at [TERMS_OF_USE.md](TERMS_OF_USE.md). The Japanese version is authoritative.
 
-利用条件の日本語版を正本とします。
+The download includes `README_EN.txt` and `README_JA.txt`. On GitHub, the English and Japanese guides are `README.md` and `README_JA.md`, respectively.
 
-配布ZIPには `README_EN.txt` と `README_JA.txt` を同梱します。
+Third-party license notices are available in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
-第三者コンポーネントのライセンス表記は、[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) に掲載します。
+## Support
 
-## 支援
+Lectap is free to use.
 
-Lectapは無料で利用できます。
+If Lectap is useful to you, please consider supporting its development with a coffee through [Buy Me a Coffee](https://buymeacoffee.com/chihayadev).
 
-Lectapがお役に立てたら、[Buy Me a Coffee](https://buymeacoffee.com/chihayadev) からコーヒー1杯分の任意のご支援をご検討ください。
-
-支援時の決済および個人情報の取り扱いは、Buy Me a CoffeeおよびStripeの規約とプライバシーポリシーに従います。開発者はカード情報を取得しません。
+Payment and personal-information handling for support are governed by the terms and privacy policies of Buy Me a Coffee and Stripe. The developer does not receive card information.
