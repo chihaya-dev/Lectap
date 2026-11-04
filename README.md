@@ -2,6 +2,8 @@
 
 **Image Viewer & File Sorter for Windows**
 
+[English README](README.en.md)
+
 Lectapは、画像やアーカイブの閲覧と、指定したフォルダへのファイルの素早い振り分けをひとつでこなせるWindows向けデスクトップアプリです。
 
 キーボードショートカットやマウス操作を使い、閲覧から整理までを一つの画面で行えます。
@@ -130,6 +132,8 @@ Lectapは、利用者の画像、設定、閲覧履歴などを自動的に外�
 不具合報告や機能に関する提案は、[GitHub Issues](https://github.com/chihaya-dev/Lectap/issues) へお願いします。
 
 報告時には、可能な範囲でLectapのバージョン、Windowsのバージョン、再現手順、表示されたメッセージ、対象ファイルの形式を添えてください。ローカルパス、Windowsユーザー名、個人情報を含む内容は投稿しないでください。
+
+セキュリティ上の問題や脆弱性の可能性がある内容は公開Issueに投稿せず、[非公開の報告方法](SECURITY.md)をご確認ください。
 
 ## 作者
 
