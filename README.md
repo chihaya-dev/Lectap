@@ -8,6 +8,11 @@ Lectap is a Windows desktop app for viewing images and archive contents while qu
 
 Keyboard shortcuts and mouse operations let you move from viewing to organizing in a single screen.
 
+## What’s New in v1.0.1
+
+・Adjusted taskbar behavior when the window is maximized.
+・Added support for registering multiple destination folders at once.
+
 ## Screenshots and Demo
 
 ![Lectap image list, central preview, and destination folders](assets/screenshots/overview.png)
