@@ -11,6 +11,7 @@ Keyboard shortcuts and mouse operations let you move from viewing to organizing 
 ## What’s New in v1.0.1
 
 ・Adjusted taskbar behavior when the window is maximized.
+
 ・Added support for registering multiple destination folders at once.
 
 ## Screenshots and Demo
